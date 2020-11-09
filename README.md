@@ -13,3 +13,5 @@ Inheritance is one of the most important concepts in object-oriented programming
 
 
 
+![Inheritance tree](https://github.com/mohamedgh16/Getting-started-with-inheritance-using-c-/blob/main/tree%20of%20inheritance.png)
+
