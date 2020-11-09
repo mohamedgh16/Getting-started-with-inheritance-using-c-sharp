@@ -10,8 +10,4 @@ Inheritance is one of the most important concepts in object-oriented programming
 1. Basic understanding of how Classes work.
 
 ### Base classes and Derived classes
-
-
-
-![Inheritance tree](https://github.com/mohamedgh16/Getting-started-with-inheritance-using-c-/blob/main/tree%20of%20inheritance.png)
-
+**Base** classes are used to generate derived classes that inherit the properties of the base class
