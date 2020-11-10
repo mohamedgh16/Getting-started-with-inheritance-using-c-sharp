@@ -4,9 +4,7 @@
 
 Inheritance is one of the most important concepts in object-oriented programming, it allows the definition of a class in terms of another class, it also allows us to maintain and boost an application.
 
-Classes are created by absorbing the methods and variables of an existing class, it then adds its own methods to enhance their capabilities. This class is called a derived class because it inherits methods and variables from a base class. Objects of a derived class are objects of a base class, but not vice versa. A derived class can only access non-private base class members unless it inherits accessor functions.
-
-
+Classes are created by absorbing the functions and variables of an existing class, it then adds its own functions to enhance their capabilities. This class is called a derived class because it inherits the functions and variables from a base class. Objects of a derived class are objects of a base class, but not vice versa. A derived class can't be able to access private base class members unless it inherits accessor functions.
 ### Table of Contents
 
 1. Base classes vs Derived classes.
@@ -31,8 +29,8 @@ Before we begin, the reader would need to have the following:
 
 ![inheritance tree](https://raw.githubusercontent.com/mohamedgh16/Getting-started-with-inheritance-using-c-/main/tree%20of%20inheritance.png)
 
-* An object is often an object of another class
-* Every derived-class is an object of its base class
+* In inheritance, an object is often an object of another class
+* Every derived class is an object of its base class
 * Inheritance forms a tree-like Hierarchy
 * Constructors are not inherited
 * To specify class one is derived from class two
@@ -50,11 +48,13 @@ Can only be accessed by classes declared in the same assembly.
 
 ### Relationship between Base classes and Derived classes
 
-The first thing a derived class does is call its base class constructor, either explicitly or implicitly.
+The base class constructor is the first thing to be called by a derived class, either explicitly or implicitly.
 
-- **Override** keyword is needed if a derived-class method overrides a base-class method
+- **Override** keyword is needed if a derived-class function overrides a base-class function
 
-- If a base class method is going to be overridden it must be declared **Virtual**
+- If a base class function is going to be overridden it must be declared **Virtual**
+
+
 
 The following example will calculate the area and perimeter of a circle using inheritance: 
 
@@ -66,7 +66,7 @@ The following example will calculate the area and perimeter of a circle using in
       
       // constructor
       public Point( int xValue, int yValue )
-      { // implicit call to Object constructor occurs here
+      { // implicit call to object constructor
          X = xValue;
          Y = yValue;}
   
