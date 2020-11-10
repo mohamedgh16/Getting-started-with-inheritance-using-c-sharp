@@ -30,7 +30,7 @@ Before we begin, the reader would need to have the following:
 ![inheritance tree](https://raw.githubusercontent.com/mohamedgh16/Getting-started-with-inheritance-using-c-/main/tree%20of%20inheritance.png)
 
 * In inheritance, an object is often an object of another class
-* Every derived class is an object of its base class
+* All derived classes are objects of their base class
 * Inheritance forms a tree-like Hierarchy
 * Constructors are not inherited
 * To specify class one is derived from class two
