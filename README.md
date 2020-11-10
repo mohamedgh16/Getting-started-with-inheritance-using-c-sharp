@@ -114,7 +114,7 @@ The following example will calculate the area and perimeter of a circle using in
    } // end class Circle
    ```
    
-  ### Constructors and destructors in derived classes
+  ### Constructors and Destructors in derived classes
   
    Instantiating a derived class causes the base class constructor to be called implicitly or explicitly. Can cause a chain reaction when a base class is also a derived class.
    
