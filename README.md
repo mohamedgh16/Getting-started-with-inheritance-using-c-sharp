@@ -86,7 +86,7 @@ The following example will calculate the area and perimeter of a circle using in
        private double radius;
    
       // constructor
-      public Circle4( int xValue, int yValue, double radiusValue )
+      public Circle( int xValue, int yValue, double radiusValue )
          : base( xValue, yValue )
       {Radius = radiusValue;}
    
