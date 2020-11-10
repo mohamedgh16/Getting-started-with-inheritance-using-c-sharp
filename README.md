@@ -6,8 +6,20 @@ Inheritance is one of the most important concepts in object-oriented programming
 
 Classes are created by absorbing the methods and variables of an existing class, it then adds its own methods to enhance their capabilities. This class is called a derived class because it inherits methods and variables from a base class. Objects of a derived class are objects of a base class, but not vice versa. A derived class can only access non-private base class members unless it inherits accessor functions.
 
+
+### Table of Contents
+
+1. Base classes vs Derived classes.
+
+1. Protected and internal members
+
+1. Relationship between base classes and derived classes
+
+1. Constructors and destructors in derived classes
+
+
 ### Prerequisites
-Before we dive right in, the reader would need to have the following:
+Before we begin, the reader would need to have the following:
 
 - A basic understanding of C# programming language. 
 
