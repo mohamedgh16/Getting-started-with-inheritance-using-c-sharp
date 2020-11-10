@@ -141,3 +141,34 @@ The following example will calculate the area and perimeter of a circle using in
       }
    ```   
    
+   Example:
+   
+   ```c#
+   static void Main( string[] args )
+      {
+         C circle1, circle2;
+   
+         // instantiate objects
+         circle1 = new C( 72, 29, 4.5 );
+         circle2 = new C( 5, 5, 10 );
+      }
+   ```
+   The output is given as follows:
+   ```c#
+   Point4 constructor: Center = [72, 29]; Radius = 0
+Circle5 constructor: Center = [72, 29]; Radius = 4.5
+Point4 constructor: Center = [5, 5]; Radius = 0
+Circle5 constructor: Center = [5, 5]; Radius = 10
+ 
+Circle5 destructor: Center = [5, 5]; Radius = 10
+Point4 destructor: Center = [5, 5]; Radius = 10
+Circle5 destructor: Center = [72, 29]; Radius = 4.5
+Point4 destructor: Center = [72, 29]; Radius = 4.5
+
+   ```
+   
+### Conclusion
+
+In this article, we have learned the importance of inheritance, how to define a base class and inherit its properties,
+and understand the relationship between classes. however, it's just the start! We will learn more about inheritance in the upcoming tutorials.
+Also, don't forget to test out the code to fully understand how it works.
