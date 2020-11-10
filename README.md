@@ -81,7 +81,7 @@ The following example will calculate the area and perimeter of a circle using in
    ```
    The following class is the Derived class of class point
    ```c#
-       public class Circle : Point
+       public class Circle: Point
     {
        private double radius;
    
@@ -120,7 +120,7 @@ The following example will calculate the area and perimeter of a circle using in
    
   ### Constructors and Destructors in derived classes
   
-   Instantiating a derived class causes the base class constructor to be called implicitly or explicitly, can cause a chain reaction when a base class is also a derived class.
+   Instantiating a derived class causes the base class constructor to be called implicitly or explicitly, which can cause a chain reaction when a base class is also a derived class.
    
    
    When a destructor is called, it performs its task and then invokes the derived class base class constructor.
