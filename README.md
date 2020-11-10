@@ -9,9 +9,9 @@ Classes are created by absorbing the methods and variables of an existing class,
 ### Prerequisites
 Before we dive right in, the reader would need to have the following:
 
-1 A basic understanding of C# programming language 
+- A basic understanding of C# programming language. 
 
-2 A basic understanding of how Classes work
+- A basic understanding of how Classes work.
 
 ### Base classes and Derived classes
 
