@@ -173,6 +173,6 @@ Point4 destructor: Center = [72, 29]; Radius = 4.5
    
 ### Conclusion
 
-In this article, we have learned the importance of inheritance, how to define a base class and inherit its properties,
+In this tutorial, we have learned the importance of inheritance, how to define a base class and inherit its properties,
 and understand the relationship between classes. however, it's just the start! We will learn more about inheritance in the upcoming tutorials.
 Also, don't forget to test out the code to fully understand how it works.
