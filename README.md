@@ -134,14 +134,14 @@ The following example will calculate the area and perimeter of a circle using in
    
       ~Point()
       {
-         Console.WriteLine( "Point4 destructor: {0}", this );
+         Console.WriteLine( "Point destructor: {0}", this );
       }    
    ```
    ```c#
    // destructor inside the class circle
       ~Circle()
       {
-         Console.WriteLine( "Circle5 destructor: {0}", this );
+         Console.WriteLine( "Circle destructor: {0}", this );
       }
    ```   
    
@@ -159,15 +159,15 @@ The following example will calculate the area and perimeter of a circle using in
    ```
    The output is given as follows:
    ```c#
-   Point4 constructor: Center = [72, 29]; Radius = 0
-Circle5 constructor: Center = [72, 29]; Radius = 4.5
-Point4 constructor: Center = [5, 5]; Radius = 0
-Circle5 constructor: Center = [5, 5]; Radius = 10
+   Point constructor: Center = [72, 29]; Radius = 0
+Circle constructor: Center = [72, 29]; Radius = 4.5
+Point constructor: Center = [5, 5]; Radius = 0
+Circle constructor: Center = [5, 5]; Radius = 10
  
-Circle5 destructor: Center = [5, 5]; Radius = 10
-Point4 destructor: Center = [5, 5]; Radius = 10
-Circle5 destructor: Center = [72, 29]; Radius = 4.5
-Point4 destructor: Center = [72, 29]; Radius = 4.5
+Circle destructor: Center = [5, 5]; Radius = 10
+Point destructor: Center = [5, 5]; Radius = 10
+Circle destructor: Center = [72, 29]; Radius = 4.5
+Point destructor: Center = [72, 29]; Radius = 4.5
 
    ```
    
