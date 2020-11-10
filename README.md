@@ -120,6 +120,24 @@ The following example will calculate the area and perimeter of a circle using in
    
    
    When a destructor is called, it performs its task and then invokes the derived class base class constructor.
-
    
-
+   
+   Let’s look at the code sample below to learn how to define a destructor.
+   
+   ``` c#
+   //Note that Output statements use a reference (This) to implicitly call the ToString method
+   // destructor inside the class point
+   
+      ~Point()
+      {
+         Console.WriteLine( "Point4 destructor: {0}", this );
+      }    
+   ```
+   ```c#
+   // destructor inside the class circle
+      ~Circle()
+      {
+         Console.WriteLine( "Circle5 destructor: {0}", this );
+      }
+   ```   
+   
