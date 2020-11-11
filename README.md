@@ -68,7 +68,8 @@ The following example will calculate the area and perimeter of a circle using in
       public Point( int xpoint, int ypoint )
       { // implicit call to object constructor
          X = xpoint;
-         Y = ypoint;}
+         Y = ypoint;
+         Console.WriteLine("point constructor: {0}", this)}
   
       public int X
       {
@@ -100,7 +101,8 @@ The following example will calculate the area and perimeter of a circle using in
       // constructor
       public Circle( int xcircle, int ycircle, double radiuscircle )
          : base( xpoint, ypoint )
-      {Radius = radiuscircle;}
+      {Radius = radiuscircle;
+      Console.WriteLine("Circle constructor: {0}", this);}
    
       public double Radius
       {
@@ -162,24 +164,16 @@ The following example will calculate the area and perimeter of a circle using in
    ```c#
    static void Main( string[] args )
       {
-         Cobject c1, c2;
-   
          // instantiate objects
-         c1 = new Cobject( 72, 29, 4.5 );
-         c2 = new Cobject( 5, 5, 10 );
+         Circle c = new Circle(6,8,4);  
       }
    ```
    The output is given as follows:
    ```c#
-   Point constructor: Center = [72, 29]; Radius = 0
-Circle constructor: Center = [72, 29]; Radius = 4.5
-Point constructor: Center = [5, 5]; Radius = 0
-Circle constructor: Center = [5, 5]; Radius = 10
- 
-Circle destructor: Center = [5, 5]; Radius = 10
-Point destructor: Center = [5, 5]; Radius = 10
-Circle destructor: Center = [72, 29]; Radius = 4.5
-Point destructor: Center = [72, 29]; Radius = 4.5
+ point constructor: Center= [6, 8]; Radius = 0
+Circle constructor: Center= [6, 8]; Radius = 4
+Circle destructor: Center= [6, 8]; Radius = 4
+Point destructor: Center= [6, 8]; Radius = 4
 
    ```
    
