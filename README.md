@@ -9,11 +9,11 @@ Classes are created by absorbing the functions and variables of an existing clas
 
 1. Base classes vs Derived classes.
 
-1. Protected and internal members
+1. Protected and internal members.
 
-1. Relationship between base classes and derived classes
+1. Relationship between base classes and derived classes.
 
-1. Constructors and destructors in derived classes
+1. Constructors and destructors in derived classes.
 
 
 ### Prerequisites
@@ -26,17 +26,13 @@ Before we begin, the reader would need to have the following:
 ### Base classes and Derived classes
 
 **Base** classes are used to generate derived classes that inherit the properties of the base class.
+Inheritance forms a tree-like Hierarchy:
 
 ![inheritance tree](https://raw.githubusercontent.com/mohamedgh16/Getting-started-with-inheritance-using-c-/main/tree%20of%20inheritance.png)
 
-* In inheritance, an object is often an object of another class
-* All derived classes are objects of their base class
-* Inheritance forms a tree-like Hierarchy
-* Constructors are not inherited
-* To specify class one is derived from class two
-```c#
-class one: two
-```
+ In inheritance, an object is often an object of another class and all derived classes are objects of their base class, Also note that constructors are not inherited.
+ This is how you specify a class child derived from class father `class child: father`
+
 
 ### Protected and internal members
 
@@ -69,6 +65,7 @@ The following example will calculate the area and perimeter of a circle using in
       { // implicit call to object constructor
          X = xpoint;
          Y = ypoint;
+         //Note that Output statements use a reference (This) to implicitly call the ToString method
          Console.WriteLine("point constructor: {0}", this)}
   
       public int X
@@ -143,7 +140,6 @@ The following example will calculate the area and perimeter of a circle using in
    Let’s look at the code sample below to learn how to define a destructor.
    
    ``` c#
-   //Note that Output statements use a reference (This) to implicitly call the ToString method
    // destructor inside the class point
    
       ~Point()
