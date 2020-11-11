@@ -61,7 +61,7 @@ in this piece of code we will define two private point coordinates, then we will
       private int x, y;
       
       public Point( int xpoint, int ypoint )
-      { // implicit call to object constructor
+      {
          X = xpoint;
          Y = ypoint;
          Console.WriteLine("point constructor: {0}", this)}
@@ -76,7 +76,7 @@ in this piece of code we will define two private point coordinates, then we will
          {return x;}
          set
          {x = value;}
-      } // end property X
+      } 
    
       public int Y
       {
@@ -116,7 +116,6 @@ in this piece of code we will define two private point coordinates, then we will
       
       Now we will need to define the functions that will help us calculate the area and perimeter of the circle, then we will override the ToString method, just like we did in 
       class Point.
-      to the string
      
       
       ```c#
@@ -140,6 +139,25 @@ in this piece of code we will define two private point coordinates, then we will
       }
    } // end class Circle
    ```
+   Take a look at the following code:
+   ```c#
+   static void Main(string[] args)
+        {
+            Circle c = new Circle(6,8,4);
+
+            Console.WriteLine("Area : " + c.Area());
+            Console.WriteLine("Perimeter : " + c.Perimeter());
+        }
+   ```
+   
+   
+   the output after execution
+   ```c#
+   point constructor: Center= [6, 8]; Radius = 0
+   Circle constructor: Center= [6, 8]; Radius = 4
+   Area : 50.2654
+   Perimeter : 25.1327
+   ```
    
   ### Constructors and Destructors in derived classes
   
@@ -150,15 +168,17 @@ in this piece of code we will define two private point coordinates, then we will
    
    
    Let’s look at the code sample below to learn how to define a destructor.
+   **Note** that you need to include this piece of code inside the class Point.
    
    ``` c#
-   // destructor inside the class point
-   
       ~Point()
       {
          Console.WriteLine( "Point destructor: {0}", this );
       }    
    ```
+   
+   **Note** that you need to include this piece of code inside the class Circle.
+   
    ```c#
    // destructor inside the class circle
       ~Circle()
@@ -167,16 +187,15 @@ in this piece of code we will define two private point coordinates, then we will
       }
    ```   
    
-   Example:
+   This is an example of how constructors and destructors work:
    
    ```c#
    static void Main( string[] args )
-      {
-         // instantiate objects
+      { 
          Circle c = new Circle(6,8,4);  
       }
    ```
-   The output is given as follows:
+   The output in order is given as follows:
    ```c#
  point constructor: Center= [6, 8]; Radius = 0
 Circle constructor: Center= [6, 8]; Radius = 4
