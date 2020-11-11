@@ -44,7 +44,7 @@ A derived class can access the **protected members** of a base class, on the oth
 
 
 ### The proper way to use inheritance
-Before we dig into to the code we should always include the word **Override** if we need to reuse a method in a derived class inherited from a base class,
+Before we dig into the code we should always include the word **Override** if we need to reuse a method in a derived class inherited from a base class,
 also the word **Virtual** is needed before the method in a base class if we are going to override it in a derived class.
 
 
@@ -60,10 +60,10 @@ in this piece of code, we will define two private point coordinates, then we wil
     {
       private int x, y;
       
-      public Point( int xpoint, int ypoint )
+      public Point( int xcoordinate, int ycoordinate )
       {
-         X = xpoint;
-         Y = ypoint;
+         X = xcoordinate;
+         Y = ycoordinate;
          Console.WriteLine("point constructor: {0}", this);}
   ```
   Here we define the set and get Accessors to access the private members of the class, then we will override the ToString method.
@@ -102,8 +102,8 @@ in this piece of code, we will define two private point coordinates, then we wil
     {
        private double radius;
    
-      public Circle( int xpoint, int ypoint, double radiuscircle )
-         : base( xpoint, ypoint )
+      public Circle( int xcoordinate, int ycoordinate, double radiuscircle )
+         : base( xcoordinate, ycoordinate )
       {Radius = radiuscircle;
       Console.WriteLine("Circle constructor: {0}", this);}
    
