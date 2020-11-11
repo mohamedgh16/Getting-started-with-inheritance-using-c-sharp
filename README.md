@@ -2,7 +2,7 @@
 
 ### Introduction
 
-Inheritance is one of the most important concepts in object-oriented programming, it allows the definition of a class in terms of another class. Inheritance allows us to maintain and boost an application, it also provides the reusability of code functionality and give a better performance.
+Inheritance is one of the most important concepts in object-oriented programming, it allows the definition of a class in terms of another class. Inheritance allows us to maintain and boost an application, it also provides the reusability of code functionality and gives a better performance.
 
 Classes are created by absorbing the functions and variables of an existing class, it then adds its own functions to enhance their capabilities, this class is called a derived class because it inherits the functions and variables from a base class. Objects of a derived class are objects of a base class, but not vice versa. 
 ### Table of Contents
@@ -64,7 +64,7 @@ in this piece of code we will define two private point coordinates, then we will
       {
          X = xpoint;
          Y = ypoint;
-         Console.WriteLine("point constructor: {0}", this)}
+         Console.WriteLine("point constructor: {0}", this);}
   ```
   Here we define the set and get Accessors to access the private members of the class, then we will override the ToString method.
   
@@ -114,8 +114,8 @@ in this piece of code we will define two private point coordinates, then we will
       }
       ```
       
-      Now we will need to define the functions that will help us calculate the area and perimeter of the circle, then we will override the ToString method, just like we did in 
-      class Point.
+      Now we need to define the functions that will help us calculate the area and perimeter of the circle,
+      then we will override the ToString method, just like we did in class Point.
      
       
       ```c#
@@ -151,7 +151,7 @@ in this piece of code we will define two private point coordinates, then we will
    ```
    
    
-   the output after execution
+   the output after execution:
    ```c#
    point constructor: Center= [6, 8]; Radius = 0
    Circle constructor: Center= [6, 8]; Radius = 4
@@ -161,7 +161,8 @@ in this piece of code we will define two private point coordinates, then we will
    
   ### Constructors and Destructors in derived classes
   
-   The constructor of a base class will be called implicitly or explicitly when Instantiating a derived class, this will cause a chain reaction when a base class is also a derived class.
+   The constructor of a base class will be called implicitly or explicitly when Instantiating a derived class,
+   this will cause a chain reaction when a base class is also a derived class.
    
    
    When a destructor is called, it executes its function and then invokes the derived class base class constructor.
@@ -192,13 +193,18 @@ in this piece of code we will define two private point coordinates, then we will
    ```c#
    static void Main( string[] args )
       { 
-         Circle c = new Circle(6,8,4);  
+         Circle c1 = new Circle(6,8,4); 
+         Circle c2 = new Circle(16,18,8);
       }
    ```
    The output in order is given as follows:
    ```c#
- point constructor: Center= [6, 8]; Radius = 0
+point constructor: Center= [6, 8]; Radius = 0
 Circle constructor: Center= [6, 8]; Radius = 4
+point constructor: Center= [16, 18]; Radius = 0
+Circle constructor: Center= [16, 18]; Radius = 8
+Circle destructor: Center= [16, 18]; Radius = 8
+Point destructor: Center= [16, 18]; Radius = 8
 Circle destructor: Center= [6, 8]; Radius = 4
 Point destructor: Center= [6, 8]; Radius = 4
 
