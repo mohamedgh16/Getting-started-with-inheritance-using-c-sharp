@@ -96,6 +96,7 @@ in this piece of code, we will define two private point coordinates, then we wil
    In class Circle, we don't need to define the point coordinates because they're already inherited as we can see `: base(xpoint,ypoint)`. 
    Now we define the radius of the circle the constructor and the Accessors.
    
+   
    ```c#
        public class Circle: Point
     {
@@ -114,17 +115,10 @@ in this piece of code, we will define two private point coordinates, then we wil
          {radius = value;}
       }
       ```
+   Now we need to define the functions that will help us calculate the area and perimeter of the circle,
+   then we will override the ToString method, just like we did in class Point.
       
-   
-      
-      Now we need to define the functions that will help us calculate the area and perimeter of the circle,
-      then we will override the ToString method, just like we did in class Point.
-      
-      
-   
-    
-   
-      ```c#
+     ```c#
       public double Diameter()
       {return Radius * 2;}
       
@@ -143,6 +137,7 @@ in this piece of code, we will define two private point coordinates, then we wil
          return "Center= " + base.ToString() +"; Radius = " + Radius;   
       }
    } // end class Circle
+   
    ```
    
    Take a look at the following code:
@@ -157,14 +152,14 @@ in this piece of code, we will define two private point coordinates, then we wil
         }
    ```
    
-   
-   the output after execution:
    ```c#
+   the output after execution:
+   
    point constructor: Center= [6, 8]; Radius = 0
    Circle constructor: Center= [6, 8]; Radius = 4
    Area : 50.2654
    Perimeter : 25.1327
-   ```
+  ```
    
   ### Constructors and Destructors in derived classes
   
