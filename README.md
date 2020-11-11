@@ -49,9 +49,10 @@ But if a base class function is going to be overridden it must be declared **Vir
 
 
 
-The following example will calculate the area and perimeter of a circle using inheritance: 
+The following example will calculate the area and perimeter of a circle using inheritance. 
 
 in this piece of code we will define two private point coordinates, then we will define a constructor that takes two integers from the main.
+
 **Note** that Output statements use a reference (This) to implicitly call the ToString method.
 
 ```c#
@@ -66,6 +67,7 @@ in this piece of code we will define two private point coordinates, then we will
          Console.WriteLine("point constructor: {0}", this)}
   ```
   Here we define the set and get Accessors to access the private members from the main, then we will override the ToString method.
+  
   **Note** that the ToString method return a string representation of class Point.
   ```c#
       public int X
