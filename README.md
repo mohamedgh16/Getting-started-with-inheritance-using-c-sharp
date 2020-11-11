@@ -119,8 +119,8 @@ in this piece of code, we will define two private point coordinates, then we wil
    ```
    
    
-   Now we need to define the functions that will help us calculate the area and perimeter of the circle, 
-   then we will override the ToString method, just like we did in class Point.
+   Now we need to define the functions that will help us
+   calculate the area and perimeter of the circle, then we will override the ToString method, just like we did in class Point.
    
    
    ```c#
