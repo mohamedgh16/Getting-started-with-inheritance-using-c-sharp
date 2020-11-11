@@ -36,20 +36,16 @@ Inheritance forms a tree-like Hierarchy:
 
 
 
-### Protected members
-Can be accessed by base class or any class derived from it.
-
-### Internel members
-Can only be accessed by a class declared within the same assembly.
+### Protected members and Internel members
+**Protected members** Can be accessed by base class or any class derived from it, on the other hand
+**Internel members** Can only be accessed by a class declared within the same assembly.
 
 
 ### Relationship between Base classes and Derived classes
 
 The base class constructor is the first thing to be called by a derived class, either explicitly or implicitly.
-
-- **Override** keyword is needed if a derived-class function overrides a base-class function
-
-- If a base class function is going to be overridden it must be declared **Virtual**
+**Override** keyword is needed if a derived-class function overrides a base-class function,
+But if a base class function is going to be overridden it must be declared **Virtual**.
 
 
 
