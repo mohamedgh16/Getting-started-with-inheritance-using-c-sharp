@@ -13,7 +13,7 @@ We create classes by inheriting the functions and variables of a base class, the
 
 1. Learn about the relationship between classes.
 
-1. How constructors and destructors get executed .
+1. How constructors and destructors get executed.
 
 
 ### Prerequisites
@@ -32,7 +32,7 @@ Inheritance forms a tree-like Hierarchy:
 ![inheritance tree](https://raw.githubusercontent.com/mohamedgh16/Getting-started-with-inheritance-using-c-/main/tree%20of%20inheritance.png)
 
  **In inheritance**, an object is often an object of another class and all derived classes are objects of their base class,
- Also note that constructors are not inherited. This is how you specify a class child derived from class father: `class child: father`.
+ Also, note that constructors are not inherited. This is how you specify a class child derived from class father: `class child: father`.
 
 
 
@@ -45,7 +45,7 @@ A derived class can access the **protected members** of a base class, on the oth
 
 ### The proper way to use inheritance
 Before we dig into the code we should always include the word **Override** if we need to reuse a method in a derived class inherited from a base class,
-also the word **Virtual** is needed before the method in a base class if we are going to override it in a derived class.
+also, the word **Virtual** is needed before the method in a base class if we are going to override it in a derived class.
 
 
 
@@ -94,7 +94,7 @@ in this piece of code, we will define two private point coordinates, then we wil
    
    In class Circle, we don't need to define the point coordinates because they're already inherited as we can see
    
-   `: base(xpoint,ypoint)`. Now we define the radius of the circle the constructor and the Accessors.
+   `: base(xcoordinate,ycoordinate)`. Now we define the radius of the circle the constructor and the Accessors.
    
    
    ```c#
