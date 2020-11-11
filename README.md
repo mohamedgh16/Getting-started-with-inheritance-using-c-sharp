@@ -40,7 +40,8 @@ Inheritance forms a tree-like Hierarchy:
 Can be accessed by base class or any class derived from it.
 
 ### Internel members
-Can only be accessed by classes declared in the same domain.
+Can only be accessed by a class declared within the same assembly.
+
 
 ### Relationship between Base classes and Derived classes
 
