@@ -66,9 +66,9 @@ in this piece of code we will define two private point coordinates, then we will
          Y = ypoint;
          Console.WriteLine("point constructor: {0}", this)}
   ```
-  Here we define the set and get Accessors to access the private members from the main, then we will override the ToString method.
+  Here we define the set and get Accessors to access the private members of the class, then we will override the ToString method.
   
-  **Note** that the ToString method return a string representation of class Point.
+  **Note** that the ToString method will return a string representation of class Point.
   ```c#
       public int X
       {
@@ -90,7 +90,7 @@ in this piece of code we will define two private point coordinates, then we will
       {return "[" + X + ", " + Y + "]";}
     } // end class Point
    ```
-   The following class is the Derived class of class point:
+   The following class is the Derived class of class point.
    
    In class Circle, we don't need to define the point coordinates because they're already inherited as we can see `: base(xpoint,ypoint)`. 
    Now we define the radius of the circle the constructor and the Accessors.
