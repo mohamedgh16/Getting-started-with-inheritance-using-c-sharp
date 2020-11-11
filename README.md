@@ -26,11 +26,12 @@ Before we begin, the reader would need to have the following:
 ### Base classes and Derived classes
 
 **Base** classes are used to generate derived classes that inherit the properties of the base class.
+
 Inheritance forms a tree-like Hierarchy:
 
 ![inheritance tree](https://raw.githubusercontent.com/mohamedgh16/Getting-started-with-inheritance-using-c-/main/tree%20of%20inheritance.png)
 
- In inheritance, an object is often an object of another class and all derived classes are objects of their base class, Also note that constructors are not inherited.
+ **In inheritance**, an object is often an object of another class and all derived classes are objects of their base class, Also note that constructors are not inherited.
  This is how you specify a class child derived from class father `class child: father`
 
 
