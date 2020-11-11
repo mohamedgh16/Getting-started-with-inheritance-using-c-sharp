@@ -2,30 +2,30 @@
 
 ### Introduction
 
-Inheritance is one of the most important concepts in object-oriented programming, it allows the definition of a class in terms of another class. Inheritance allows us to maintain and boost an application, it also provides the reusability of code functionality and gives better performance.
+inheritance is a very unique concept in (OOP) object-oriented programming, it allows the definition of multiple classes using the properties of other classes. Inheritance allows us to maintain modify and boost our code, it also provides the reusability of code functionality and gives better performance.
 
-Classes are created by absorbing the functions and variables of an existing class, it then adds its own functions to enhance their capabilities, this class is called a derived class because it inherits the functions and variables from a base class. Objects of a derived class are objects of a base class, but not vice versa. 
+We create classes by inheriting the functions and variables of a base class, then we add new functions to enhance its performance, we call it a derived class because it inherits the properties of a base class. Without inheritance, the code will be unstructured harder to read, and complex
 ### Table of Contents
 
 1. Base classes vs Derived classes.
 
-1. Protected and internal members.
+1. Protected vs Internal members.
 
-1. Relationship between base classes and derived classes.
+1. Learn about the relationship between classes.
 
-1. Constructors and destructors in derived classes.
+1. How constructors and destructors get executed .
 
 
 ### Prerequisites
-Before we begin, the reader would need to have the following:
+Before we begin this tutorial, you should have the following:
 
 - A basic understanding of C# programming language. 
 
 - A basic understanding of how Classes work.
 
-### Base classes and Derived classes
+### Base classes vs Derived classes
 
-**Base** classes are used to generate derived classes that inherit the properties of the base class.
+A **Base** class produces derived classes that inherit the properties of the base class.
 
 Inheritance forms a tree-like Hierarchy:
 
@@ -36,17 +36,16 @@ Inheritance forms a tree-like Hierarchy:
 
 
 
-### Protected members and Internal members
+### Protected members vs Internal members
 
-**Protected members** Can be accessed by base class or any class derived from it, on the other hand
-**Internal members** Can only be accessed by a class declared within the same assembly.
+A derived class can access the **protected members** of a base class, on the other hand
+**Internal members** Can only be accessed by a class declared within the same domain.
 
 
-### Relationship between Base classes and Derived classes
 
-The base class constructor is the first thing to be called by a derived class, either explicitly or implicitly.
-**Override** keyword is needed if a derived-class function overrides a base-class function,
-But if a base class function is going to be overridden it must be declared **Virtual**.
+### The proper way to use inheritance
+Before we dig into to the code we need to include the word **Override** if we need to reuse a method in a derived class inherited from a base class,
+also the word **Virtual** is needed before the method in a base class if we are going to override it in a derived class.
 
 
 
