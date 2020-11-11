@@ -44,7 +44,7 @@ A derived class can access the **protected members** of a base class, on the oth
 
 
 ### The proper way to use inheritance
-Before we dig into to the code we need to include the word **Override** if we need to reuse a method in a derived class inherited from a base class,
+Before we dig into to the code we should always include the word **Override** if we need to reuse a method in a derived class inherited from a base class,
 also the word **Virtual** is needed before the method in a base class if we are going to override it in a derived class.
 
 
