@@ -2,9 +2,9 @@
 
 ### Introduction
 
-Inheritance is one of the most important concepts in object-oriented programming, it allows the definition of a class in terms of another class, it also allows us to maintain and boost an application.
+Inheritance is one of the most important concepts in object-oriented programming, it allows the definition of a class in terms of another class. It allows us to maintain and boost an application, it also provides the reusability of code functionality and give a better performance.
 
-Classes are created by absorbing the functions and variables of an existing class, it then adds its own functions to enhance their capabilities. This class is called a derived class because it inherits the functions and variables from a base class. Objects of a derived class are objects of a base class, but not vice versa. A derived class can't be able to access private base class members unless it inherits accessor functions.
+Classes are created by absorbing the functions and variables of an existing class, it then adds its own functions to enhance their capabilities, this class is called a derived class because it inherits the functions and variables from a base class. Objects of a derived class are objects of a base class, but not vice versa. 
 ### Table of Contents
 
 1. Base classes vs Derived classes.
