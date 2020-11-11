@@ -118,8 +118,10 @@ in this piece of code, we will define two private point coordinates, then we wil
 
    ```
    
-   Now we need to define the functions that will help us calculate the area and perimeter of the circle,
+   
+   Now we need to define the functions that will help us calculate the area and perimeter of the circle, 
    then we will override the ToString method, just like we did in class Point.
+   
    
    ```c#
       public double Diameter()
@@ -133,7 +135,6 @@ in this piece of code, we will define two private point coordinates, then we wil
       {return Math.PI * Math.Pow( Radius, 2 );}
    
       // return string representation of Circle
-      
       public override string ToString()
       {
       // using the ToString method with extra additions
