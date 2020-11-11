@@ -134,7 +134,7 @@ in this piece of code, we will define two private point coordinates, then we wil
       
       public override string ToString()
       {
-      // using the tostring method with extra additions
+      // using the ToString method with extra additions
          return "Center= " + base.ToString() +"; Radius = " + Radius;   
       }
    } // end class Circle
@@ -169,6 +169,7 @@ in this piece of code, we will define two private point coordinates, then we wil
    
    
    Let’s look at the code sample below to learn how to define a destructor.
+   
    **Note** that you need to include this piece of code inside the class Point.
    
    ``` c#
