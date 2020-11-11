@@ -2,7 +2,7 @@
 
 ### Introduction
 
-Inheritance is one of the most important concepts in object-oriented programming, it allows the definition of a class in terms of another class. Inheritance allows us to maintain and boost an application, it also provides the reusability of code functionality and gives a better performance.
+Inheritance is one of the most important concepts in object-oriented programming, it allows the definition of a class in terms of another class. Inheritance allows us to maintain and boost an application, it also provides the reusability of code functionality and gives better performance.
 
 Classes are created by absorbing the functions and variables of an existing class, it then adds its own functions to enhance their capabilities, this class is called a derived class because it inherits the functions and variables from a base class. Objects of a derived class are objects of a base class, but not vice versa. 
 ### Table of Contents
@@ -36,9 +36,9 @@ Inheritance forms a tree-like Hierarchy:
 
 
 
-### Protected members and Internel members
+### Protected members and Internal members
 **Protected members** Can be accessed by base class or any class derived from it, on the other hand
-**Internel members** Can only be accessed by a class declared within the same assembly.
+**Internal members** Can only be accessed by a class declared within the same assembly.
 
 
 ### Relationship between Base classes and Derived classes
@@ -51,7 +51,7 @@ But if a base class function is going to be overridden it must be declared **Vir
 
 The following example will calculate the area and perimeter of a circle using inheritance. 
 
-in this piece of code we will define two private point coordinates, then we will define a constructor that takes two integers from the main.
+in this piece of code, we will define two private point coordinates, then we will define a constructor that takes two integers from the main.
 
 **Note** that Output statements use a reference (This) to implicitly call the ToString method.
 
