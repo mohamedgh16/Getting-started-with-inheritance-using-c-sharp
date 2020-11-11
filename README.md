@@ -32,15 +32,14 @@ Inheritance forms a tree-like Hierarchy:
 ![inheritance tree](https://raw.githubusercontent.com/mohamedgh16/Getting-started-with-inheritance-using-c-/main/tree%20of%20inheritance.png)
 
  **In inheritance**, an object is often an object of another class and all derived classes are objects of their base class, Also note that constructors are not inherited.
- This is how you specify a class child derived from class father `class child: father`
+ This is how you specify a class child derived from class father: `class child: father`
 
 
-### Protected and internal members
 
-#### Protected members
+### Protected members
 Can be accessed by base class or any class derived from it.
 
-#### Internel members
+### Internel members
 Can only be accessed by classes declared in the same domain.
 
 ### Relationship between Base classes and Derived classes
