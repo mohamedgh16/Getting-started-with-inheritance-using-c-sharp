@@ -155,7 +155,7 @@ in this piece of code, we will define two private point coordinates, then we wil
         }
    ```
    
-   the output after execution:
+   The output after execution:
    
    ```c#
    point constructor: Center= [6, 8]; Radius = 0
