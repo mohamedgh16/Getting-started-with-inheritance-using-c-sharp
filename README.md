@@ -187,7 +187,6 @@ in this piece of code, we will define two private point coordinates, then we wil
    **Note** that you need to include this piece of code inside the class Circle.
    
    ```c#
-   // destructor inside the class circle
       ~Circle()
       {
          Console.WriteLine( "Circle destructor: {0}", this );
@@ -219,5 +218,5 @@ Point destructor: Center= [6, 8]; Radius = 4
 ### Conclusion
 
 In this tutorial, we have learned the importance of inheritance, how to define a base class and inherit its properties,
-and understand the relationship between classes. however, it's just the start! We will learn more about inheritance in the upcoming tutorials.
+and understand the relationship between classes. However, it's just the start! we will learn more about inheritance in the upcoming tutorials.
 Also, don't forget to test out the code to fully understand how it works.
