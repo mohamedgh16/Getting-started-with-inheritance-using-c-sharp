@@ -32,7 +32,7 @@ Inheritance forms a tree-like Hierarchy:
 ![inheritance tree](https://raw.githubusercontent.com/mohamedgh16/Getting-started-with-inheritance-using-c-/main/tree%20of%20inheritance.png)
 
  **In inheritance**, an object is often an object of another class and all derived classes are objects of their base class, Also note that constructors are not inherited.
- This is how you specify a class child derived from class father: `class child: father`
+ This is how you specify a class child derived from class father: `class child: father`.
 
 
 
@@ -51,20 +51,23 @@ But if a base class function is going to be overridden it must be declared **Vir
 
 The following example will calculate the area and perimeter of a circle using inheritance: 
 
+in this piece of code we will define two private point coordinates, then we will define a constructor that takes two integers from the main.
+**Note** that Output statements use a reference (This) to implicitly call the ToString method.
+
 ```c#
     public class Point
     {
-       // point coordinate
       private int x, y;
       
-      // constructor
       public Point( int xpoint, int ypoint )
       { // implicit call to object constructor
          X = xpoint;
          Y = ypoint;
-         //Note that Output statements use a reference (This) to implicitly call the ToString method
          Console.WriteLine("point constructor: {0}", this)}
-  
+  ```
+  Here we define the set and get Accessors to access the private members from the main, then we will override the ToString method.
+  **Note** that the ToString method return a string representation of class Point.
+  ```c#
       public int X
       {
          get
@@ -81,19 +84,21 @@ The following example will calculate the area and perimeter of a circle using in
          {y = value;}
       } 
    
-      // return string representation of Point
       public override string ToString()
       {return "[" + X + ", " + Y + "]";}
     } // end class Point
    ```
-   The following class is the Derived class of class point
+   The following class is the Derived class of class point:
+   
+   In class Circle, we don't need to define the point coordinates because they're already inherited as we can see `: base(xpoint,ypoint)`. 
+   Now we define the radius of the circle the constructor and the Accessors.
+   
    ```c#
        public class Circle: Point
     {
        private double radius;
    
-      // constructor
-      public Circle( int xcircle, int ycircle, double radiuscircle )
+      public Circle( int xpoint, int ypoint, double radiuscircle )
          : base( xpoint, ypoint )
       {Radius = radiuscircle;
       Console.WriteLine("Circle constructor: {0}", this);}
@@ -105,6 +110,14 @@ The following example will calculate the area and perimeter of a circle using in
          set
          {radius = value;}
       }
+      ```
+      
+      Now we will need to define the functions that will help us calculate the area and perimeter of the circle, then we will override the ToString method, just like we did in 
+      class Point.
+      to the string
+     
+      
+      ```c#
       
       public double Diameter()
       {return Radius * 2;}
@@ -121,7 +134,7 @@ The following example will calculate the area and perimeter of a circle using in
       public override string ToString()
       {
       // using the tostring method with extra additions
-         return "Center= " + base.ToString() +"; Radius = " + Radius;  // use property Radius 
+         return "Center= " + base.ToString() +"; Radius = " + Radius;   
       }
    } // end class Circle
    ```
