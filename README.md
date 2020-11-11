@@ -31,12 +31,13 @@ Inheritance forms a tree-like Hierarchy:
 
 ![inheritance tree](https://raw.githubusercontent.com/mohamedgh16/Getting-started-with-inheritance-using-c-/main/tree%20of%20inheritance.png)
 
- **In inheritance**, an object is often an object of another class and all derived classes are objects of their base class, Also note that constructors are not inherited.
- This is how you specify a class child derived from class father: `class child: father`.
+ **In inheritance**, an object is often an object of another class and all derived classes are objects of their base class,
+ Also note that constructors are not inherited. This is how you specify a class child derived from class father: `class child: father`.
 
 
 
 ### Protected members and Internal members
+
 **Protected members** Can be accessed by base class or any class derived from it, on the other hand
 **Internal members** Can only be accessed by a class declared within the same assembly.
 
@@ -112,13 +113,14 @@ in this piece of code, we will define two private point coordinates, then we wil
          set
          {radius = value;}
       }
-      ```
+      
+   
       
       Now we need to define the functions that will help us calculate the area and perimeter of the circle,
       then we will override the ToString method, just like we did in class Point.
      
-      
-      ```c#
+    
+   
       
       public double Diameter()
       {return Radius * 2;}
@@ -172,7 +174,7 @@ in this piece of code, we will define two private point coordinates, then we wil
    
    **Note** that you need to include this piece of code inside the class Point.
    
-   ``` c#
+   ```c#
       ~Point()
       {
          Console.WriteLine( "Point destructor: {0}", this );
