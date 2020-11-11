@@ -41,10 +41,10 @@ class one: two
 ### Protected and internal members
 
 #### Protected members
-Can be accessed by base class or any class derived from that base class.
+Can be accessed by base class or any class derived from it.
 
 #### Internel members
-Can only be accessed by classes declared in the same assembly.
+Can only be accessed by classes declared in the same domain.
 
 ### Relationship between Base classes and Derived classes
 
@@ -65,10 +65,10 @@ The following example will calculate the area and perimeter of a circle using in
       private int x, y;
       
       // constructor
-      public Point( int xValue, int yValue )
+      public Point( int xpoint, int ypoint )
       { // implicit call to object constructor
-         X = xValue;
-         Y = yValue;}
+         X = xpoint;
+         Y = ypoint;}
   
       public int X
       {
@@ -98,9 +98,9 @@ The following example will calculate the area and perimeter of a circle using in
        private double radius;
    
       // constructor
-      public Circle( int xValue, int yValue, double radiusValue )
-         : base( xValue, yValue )
-      {Radius = radiusValue;}
+      public Circle( int xcircle, int ycircle, double radiuscircle )
+         : base( xpoint, ypoint )
+      {Radius = radiuscircle;}
    
       public double Radius
       {
@@ -113,7 +113,7 @@ The following example will calculate the area and perimeter of a circle using in
       public double Diameter()
       {return Radius * 2;}
       
-      public double Circumference()
+      public double Perimeter()
       {return Math.PI * Diameter();}
    
       
@@ -124,7 +124,7 @@ The following example will calculate the area and perimeter of a circle using in
       
       public override string ToString()
       {
-      // use base reference to return Point string representation
+      // using the tostring method with extra additions
          return "Center= " + base.ToString() +"; Radius = " + Radius;  // use property Radius 
       }
    } // end class Circle
@@ -132,10 +132,10 @@ The following example will calculate the area and perimeter of a circle using in
    
   ### Constructors and Destructors in derived classes
   
-   Instantiating a derived class causes the base class constructor to be called implicitly or explicitly, which can cause a chain reaction when a base class is also a derived class.
+   The constructor of a base class will be called implicitly or explicitly when Instantiating a derived class, this will cause a chain reaction when a base class is also a derived class.
    
    
-   When a destructor is called, it performs its task and then invokes the derived class base class constructor.
+   When a destructor is called, it executes its function and then invokes the derived class base class constructor.
    
    
    Let’s look at the code sample below to learn how to define a destructor.
@@ -162,11 +162,11 @@ The following example will calculate the area and perimeter of a circle using in
    ```c#
    static void Main( string[] args )
       {
-         C circle1, circle2;
+         Cobject c1, c2;
    
          // instantiate objects
-         circle1 = new C( 72, 29, 4.5 );
-         circle2 = new C( 5, 5, 10 );
+         c1 = new Cobject( 72, 29, 4.5 );
+         c2 = new Cobject( 5, 5, 10 );
       }
    ```
    The output is given as follows:
