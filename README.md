@@ -32,7 +32,7 @@ Inheritance forms a tree-like Hierarchy:
 ![inheritance tree](https://raw.githubusercontent.com/mohamedgh16/Getting-started-with-inheritance-using-c-/main/tree%20of%20inheritance.png)
 
  **In inheritance**, an object is often an object of another class and all derived classes are objects of their base class,
- Also, note that constructors are not inherited. This is how you specify a class child derived from class father: `class child: father`.
+ also, note that constructors are not inherited. This is how you specify a class child derived from class father: `class child: father`.
 
 
 
@@ -133,10 +133,10 @@ in this piece of code, we will define two private point coordinates, then we wil
       public virtual double Area()
       {return Math.PI * Math.Pow( Radius, 2 );}
    
-      // return string representation of Circle
+      // Return string representation of Circle
       public override string ToString()
       {
-      // using the ToString method with extra additions
+      // Using the ToString method with extra additions
          return "Center= " + base.ToString() +"; Radius = " + Radius;   
       }
    } // end class Circle
